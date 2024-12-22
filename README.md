@@ -21,9 +21,11 @@ Database: Local Storage of Browser
 
 ## Video Walkthrough of the project
 Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+https://www.youtube.com/watch?v=-YFkFcDDOiw
 
 ## Video Walkthrough of the codebase
 Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+[video1675527107.zip](https://github.com/user-attachments/files/18223076/video1675527107.zip)
 
 ## Features
 List out the key features of your application.
@@ -50,26 +52,25 @@ We can basically use it when a user is present, to use it user must have to crea
 
 ```
 ## Sign-up Page
-![alt text](image-5.png)
+![Screenshot (325)](https://github.com/user-attachments/assets/7f60c468-b097-4d16-ac5f-247a5ef21043)
 
 ## Sign-in Page
-![alt text](image-6.png)
+![Screenshot (324)](https://github.com/user-attachments/assets/44981833-0314-4906-b769-81572bee8009)
 
 ## Home Section
-![alt text](image.png)
-Include screenshots as necessary.
+Include![Screenshot (320)](https://github.com/user-attachments/assets/7979f919-c046-4fd7-b394-f958cfddae6b)
+ screenshots as necessary.
 
 ## My-Network Section
-![alt text](image-1.png)
+![Screenshot (321)](https://github.com/user-attachments/assets/cfed17e9-2700-41fd-86a3-454a4b68e7a0)
 
 ## Jobs-Section
-![alt text](image-2.png)
+![Screenshot (322)](https://github.com/user-attachments/assets/6b3a28bc-0558-4b1a-9e3c-ed7899636104)
 
 ## Notifications
-![alt text](image-3.png)
+![Screenshot (323)](https://github.com/user-attachments/assets/92b62588-e7d5-4c52-a51e-fc443c3cd507)
 
 ## My Profile-Section 
-
 ![Screenshot (319)](https://github.com/user-attachments/assets/8056d484-2822-4887-9882-fc58467fac0e)
 
 
