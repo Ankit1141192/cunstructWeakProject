@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <link rel="shortcut icon" href="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d7aaf20f1c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="vecteezy_linkedin-png-icon_16716470.png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="left-section">
+            <a href="index.html"><img class="logo" src="icons/linkedin logo icon.svg"></a>
+            <input class="search-box" type="text"  placeholder="Search" >
+            
+        </div>
+        <div class="middle-section">
+            <div class="top-icon">
+                <a href="index.html"> <img class="home" src="icons/home.svg"></a>
+                <label><a href="./index.html">Home</a></label>
+              
+            </div>
+            <div class="top-icon">
+                <img style="height: 20px;" class="home" src="icons/users-svgrepo-com.svg">
+                <label><a href="./mynetwork.html">My Network</a></label>
+            </div>
+            <div class="top-icon">
+                <a href="./jobs.html"> <img style="height: 20px;" class="home" src="icons/portfolio-suitcase-svgrepo-com.svg" ></a>
+                <!-- <img style="height: 20px;" class="home" src="icons/portfolio-suitcase-svgrepo-com.svg" > -->
+                <label><a href="./jobs.html">Jobs</a></label>
+            </div>
+            <div class="top-icon">
+                <img class="home" src="icons/chat-square-plain-2-svgrepo-com.svg">
+                <label><a href="#">Messaging</a></label>
+            </div>
+            <div class="notification-container">
+               <img class="notification" src="icons/notification-svgrepo-com.svg">
+                <label><a href="./notificationPage.html">Notifications</a></label>
+                <a href="./notificationPage.html"><div style="font-size: 14px;" class="notification-alert">3</div></a>
+            </div>
+            <div class="me-icon">
+                <div class="profile-container">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFQcRBJoMoODg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1688129335138?e=1740009600&v=beta&t=GT2k4QjdAeglA8zekmzBURr6G_rY8jhgYNMYqwof1aI" alt="Profile" class="profile-picture" onclick="toggleDropdown()">
+                    <div class="dropdown">
+                        <div class="dropdown-header">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFQcRBJoMoODg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1688129335138?e=1740009600&v=beta&t=GT2k4QjdAeglA8zekmzBURr6G_rY8jhgYNMYqwof1aI" alt="Profile">
+                            <div>
+                                <strong><a href="./Ankit.html">Ankit Kumar</a></strong>
+                                Software Developer | Java<br>Sprint Boot | Microservices
+                            </div>
+                        </div>
+                        <a href="index.html" class="view-profile">View Profile</a>
+                        <div class="dropdown-section">
+                            <h4>Account</h4>
+                            <a href="#">Try 1 month of Premium for ₹0</a>
+                            <a href="#">Settings & Privacy</a>
+                            <a href="#">Help</a>
+                            <a href="#">Language</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Manage</h4>
+                            <a href="#">Posts & Activity</a>
+                            <a href="#">Job Posting Account</a>
+                            <a id="logoutButton" style="cursor:pointer">Sign out</a>
+                        </div>
+                    </div> 
+                    <label style="opacity: 0.6;font-family: bold;">Me<i class="fa fa-sort-desc"></i></label>
+                </div>
+            </div> 
+        </div>
+        <div class="right-section">
+            <div class="top-icon">
+            <img style="height: 20px;" class="home" onclick="toggleDropdown()" src="icons/square-4-grid-svgrepo-com.svg">
+            <label>For Business</label>
+            <div class="navbar">
+            </div>
+        
+            <div id="businessModal" class="dropdown-modal">
+                <div class="section">
+                    <div class="section-column">
+                        <h3>My Apps</h3>
+                        <ul>
+                            <li><span>Sell</span></li>
+                            <li><span>Groups</span></li>
+                            <li><span>Talent Insights</span></li>
+                            <li><span>Post a job</span></li>
+                            <li><span>Services Marketplace</span></li>
+                            <li><span>Advertise</span></li>
+                            <li><span>Learning</span></li>
+                        </ul>
+                    </div>
+        
+                    <div class="section-column">
+                        <h3>Explore more for business</h3>
+                        <ul>
+                            <li><a href="#">Hire on LinkedIn</a> <span>- Find, attract and recruit talent</span></li>
+                            <li><a href="#">Sell with LinkedIn</a> <span>- Unlock sales opportunities</span></li>
+                            <li><a href="#">Post a job for free</a> <span>- Get qualified applicants quickly</span></li>
+                            <li><a href="#">Advertise on LinkedIn</a> <span>- Acquire customers and grow your business</span></li>
+                            <li><a href="#">Get started with Premium</a> <span>- Expand and leverage your network</span></li>
+                            <li><a href="#">Learn with LinkedIn</a> <span>- Courses to develop your employees</span></li>
+                            <li><a href="#">Admin Center</a> <span>- Manage billing and account details</span></li>
+                        </ul>
+                        <a href="#" class="footer-link">Create a Company Page +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-icon">
+            <img style="height: 20px;" class="home" src="icons/business-svgrepo-com.svg">
+            <label>Post a job</label>
+        </div> 
+        </div>
+    </header>
+    <!-- main section  -->
+    <div id="profilePage">
+        <!-- left side div -->
+        <div id="leftSide">
+            <!-- details -->
+            <div id="details">
+                <div id ="profilePic">
+                    <img id="img1" src="https://media.licdn.com/dms/image/v2/D5616AQG5pQjR3TzgfQ/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1719683489432?e=1740009600&v=beta&t=nNiEzqxXbrWgRALBd80p0chSkQzQDSPufOI1D8R9ZDE" alt="backGround-image">
+                    <img id = "img2"src="https://media.licdn.com/dms/image/v2/D4D03AQFQcRBJoMoODg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1688129335138?e=1740009600&v=beta&t=GT2k4QjdAeglA8zekmzBURr6G_rY8jhgYNMYqwof1aI" alt="profile-image">
+                  
+                   
+                </div>
+                <div id ="prof">
+                    <div id="left1">
+                        <p id="para" class="paragraph"><b id="main">Ankit Kumar</b> (He/Him)</p>
+                        <p class="paragraph">Non it sector to move in it sector</p>
+                        <p id="para" class="paragraph">Kanpur, Uttar Pradesh, India  <a href="#">Contact info</a></p>
+                        <p class="paragraph"><a href="#">492 connections</a></p>
+                       
+                    </div>
+                    <div id="edu1">
+                        
+                        <img id="img3" src="https://media.licdn.com/dms/image/v2/C560BAQFmsvAyTyFrZA/company-logo_100_100/company-logo_100_100/0/1630565723894/chatrapati_sahuji_maharaj_kanpur_university_kanpur_logo?e=1742428800&v=beta&t=9xy4Kb7jj3vdrno_CdqthuqG5t3NttvW9BMydillSbk" alt="">
+                        <p class="paragraph">Chatrapati Sahuji Maharaj Kanpur University, Kanpur  </p><span><i class="fa-solid fa-pencil"></i></span>
+                       
+                    </div>
+                    
+                </div>
+                <div id="BtnGroup">
+                    <button id="btn1">Open to</button>
+                    <button id="btn2">Add profile section</button>
+                    <button id="btn2">Enhance profile</button>
+                    <button id="btn3">Resources</button>
+                </div>
+                
+            </div>
+            <!-- Analytics -->
+            <div id="Analytics">
+                <h2>Analytics</h2>
+                <p class="paragraph"><span><i class="fa-regular fa-eye"></i></span>Private to you</p>
+                <div id="analysis">
+                    <div> 
+                        <p class="paragraph"><span><i class="fa-solid fa-users"></i></span><b>153 profile views</b></p>
+                        <p class="paragraph">Discover who's viewed your profile.</p>
+
+                    </div>
+                    <div>
+                        <p class="paragraph"> <span><i class="fa-solid fa-chart-simple fa-flip"></i></span> <b>1,121 post impressions</b></p>
+                        <p class="paragraph">Check out who's engaging with your posts.Check out who's engaging with your posts.</p>
+                        <p id="para" class="paragraph">Past 7 days</p>
+                       
+                        
+                    </div>
+                    <div>
+                        <p class="paragraph"><i class="fa-solid fa-magnifying-glass"></i> <b>9 search appearances</b></p>
+                        <p class="paragraph">See how often you appear in search results.</p>
+                        
+                    </div>
+                   
+
+                </div>
+                <hr>
+                <h4>Show all analytics <span><i class="fa-solid fa-arrow-right"></i></span></h4>
+              
+            </div>
+            <!-- About -->
+            <div id="About">
+                <div>
+                    <h2>About</h2>
+                    <span><i class="fa-solid fa-pencil"></i></span>
+                </div>
+                
+                <p class="paragraph">My skills</p>
+                <div id="top">
+                    <div id="topSkils">
+                        <p class="paragraph"><span><i class="fa-solid fa-gem"></i></span>Top skills</p>
+                        <p class="paragraph">JavaScript • Communication • English • Basic html</p>
+                       
+                    </div>
+                    <div > <span ><i class="fa-solid fa-arrow-right"></i></span></div>
+                </div>
+            </div>
+            <!-- featured -->
+            <div id="featured">
+                <div id="feat">
+                    <h2>Featured</h2>
+                    <div id="feat1">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pencil"></i></span>
+                    </div>
+                   
+                </div>
+                <div id="post1">
+                    <p class="paragraph">Post</p>
+                    <img src="https://media.licdn.com/dms/image/v2/D5622AQHArfgFizP3Fg/feedshare-shrink_800/feedshare-shrink_800/0/1719085604580?e=1737590400&v=beta&t=bEGBxtM6NVdIUcO1IoLJ9K1tMlZ8zD_H6uRaj7AFEco" alt="">
+                    <p class="paragraph">Basic Web Development certificate - Masai school</p>
+                </div>
+            </div>
+            <!-- Activity -->
+            <div id="Activity">
+                <div id="activ1">
+                    <div id="act1">
+                        <h2>Activity</h2>
+                        <p class="paragraph">509 followers</p>
+                    </div>
+                    <div id="act2">
+                        <button>Create a post</button>
+                        <span><i class="fa-solid fa-pencil"></i></span>
+                    </div>
+                </div>
+               
+                <div id="active2">
+                    <button id="btn1">Posts</button>
+                    <button id="btn2">Comments</button>
+                    <button id="btn2">Videos</button>
+                    <button id="btn2">Images</button>
+                    <button id="btn2">Articles</button>
+                </div>
+                <div id="active3">
+                    <p id="para" class="paragraph"><b>Ankit kumar</b> posted this.1d</p>
+                    <div >
+                        <p class="paragraph">Hello, LinkedIn connections! 👋,
+                            Day-18 December Daily Learning Journey 
+                            Today the question came in MSM (Masai speaking marathon),...</p>
+                             <p id="para" class="paragraph">...show more</p>
+                    </div>
+                    <hr>
+                    <p id="para" class="paragraph"><b>Ankit kumar</b> posted this.2d</p>
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5622AQEs0OsaeijMOQ/feedshare-shrink_160/B56ZPU3_kqHQAg-/0/1734443269090?e=1737590400&v=beta&t=LndMrUHPXzAU7f8jAXaCzwfDyNPuEFU9tDgscx_RofA" alt="">
+                        <p class="paragraph">Hello, LinkedIn connections! 👋,
+                            Day-17 December Daily Learning Journey 
+                            Today the question came in MSM (Masai speaking marathon),  describe the difference between...</p>
+                            <p id="para" class="paragraph">...show more</p>
+                    </div>
+                    <hr>
+                    <p id="para" class="paragraph"><b>Ankit kumar</b> posted this.2d</p>
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5622AQHvZze-wolRZg/feedshare-shrink_160/B56ZPQKMCVGkAg-/0/1734364152521?e=1737590400&v=beta&t=rVYowE2RZJ7MlhRUihlfLMs_ZV8lK-B76KAU1DBB7zY" alt="">
+                        <p>Hello, LinkedIn connections! 👋,
+                            Day-16 December Daily Learning Journey 
+                            Today was my evaluation due to which I read my notes and am posting the same.
+                            Masai hashtag#dailylearning...</p>
+                            <p id="para" class="paragraph">...show more</p>
+                    </div>
+                    <hr>
+                    <h4>Show all posts <span><i class="fa-solid fa-arrow-right"></i></span></h4>
+                   
+                </div>
+            </div>
+            <!-- Eduction  -->
+            <div id="Education">
+                <div id="Educate">
+                    <h2>Education</h2>
+                    <div id="Educate1">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pencil"></i></span>
+                    </div>
+                </div>
+                <div id="Educate2">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/C560BAQFmsvAyTyFrZA/company-logo_100_100/company-logo_100_100/0/1630565723894/chatrapati_sahuji_maharaj_kanpur_university_kanpur_logo?e=1742428800&v=beta&t=9xy4Kb7jj3vdrno_CdqthuqG5t3NttvW9BMydillSbk" alt="">
+                    </div>
+                    <div id="Edu1">
+                        <h3>Chatrapati Sahuji Maharaj Kanpur University, Kanpur</h3>
+                        <p class="paragraph">Bachelor's of Science, ScienceBachelor's of Science, Science <p>
+                        <p id="para" class="paragraph">Apr 2021 - May 2024Apr 2021 - May 2024<p>
+                        <p class="paragraph">Grade: A</p>
+                    </div>
+                   
+                </div>
+                <hr id="hr1">
+                <div id="Educate2">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D560BAQGoTSZe7RRwgA/company-logo_100_100/company-logo_100_100/0/1734342654523/masaischool_logo?e=1742428800&v=beta&t=Wb-alKgfJMInBrLg22iAqglsuRCX-E8skkLqIT5UCEI" alt="">
+                    </div>
+                    <div>
+                        <p class="paragraph">Masai</p>
+                        <p id="para">Jul 2024</p>
+                    </div>
+                   
+                </div>
+                <hr>
+                <h4>Show all Educations <span><i class="fa-solid fa-arrow-right"></i></span></h4>
+
+            </div>
+            <!-- Skills -->
+            <div id="Skills">
+                <div id="Skills1">
+                    <h2>Skills</h2>
+                    <div id="sk">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pencil"></i></span>
+                    </div>
+                </div>
+                <h3>DSA</h3>
+                <hr id="hr1">
+                <h3>Python (Programming Language)</h3>
+                <hr>
+                <h4>Show all Skills <span><i class="fa-solid fa-arrow-right"></i></span></h4>
+
+            </div>
+        
+            <div id="Language">
+                <div id="Language1">
+                    <h2>Language</h2>
+                    <div id="Lang">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <span><i class="fa-solid fa-pencil"></i></span>
+                    </div>
+                    
+                </div>
+                <div id="Language2">
+                    <h3>English</h3>
+                    <p id="para" class="paragraph">Limited working proficiency</p>
+                    <hr id="hr1">
+                    <h3>Hindi</h3>
+                    <p id="para" class="paragraph">Professional working proficiency</p>
+                </div>
+                
+            </div>
+            <div id="Interests">
+                <h2>Interests</h2>
+                <div id="Interests1">
+                    <a>Top Voices</a>
+                    <a >Companies</a>
+                    <a >Groups</a>
+                    <a >Newsletters</a>
+                    <a >Schools</a>
+                </div>
+                <hr>
+                <div id="Interests2">
+                    <div id="more-profile" >
+            
+                        <div>
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQH3OXCs5a05Og/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1706903307026?e=1740009600&v=beta&t=fdH2K1vEu5AYY41t28j5qUIgJNIV9clgu-U5irN4yS4" alt="">
+                        </div>
+                        <div>
+                            <p id="para" class="paragraph"><b> Arsh Goyal</b><i class="fa-brands fa-linkedin fa-shake"></i></p>   
+                            <p class="paragraph"> Senior Software Engineer | Samsung | LinkedIn Top Voice ‘24 | Gen AI | Ex- ISRO | Gold Medalist - NIT Jalandhar | Educator - Unacademy | CodeChef | 200k+ YouTube & Instagram | 3x TEDx...</p>
+                             <p id="para" class="paragraph"> 310,498 followers</p>
+                            <button id="btn1"><i class="fa-solid fa-check fa-sm"></i></i>Following</button>
+                        </div>
+                       
+                    </div>
+                    
+                    <div id="more-profile">
+                         <div>
+                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFrmDuWUxQoMg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1715645354619?e=1740009600&v=beta&t=-lRE5y3oA_1ZEsaxskTWHK_xcnAObKON9NpbBIyMCwY" alt="">
+                        </div>
+                        <div>
+                            <p id="para" class="paragraph"><b>Sundar Pichai</b><i class="fa-brands fa-linkedin fa-shake"></i></p> 
+                            
+                            <p class="paragraph"> CEO at GoogleCEO at Google</p>
+                            <p id="para" class="paragraph"> 204,496 followers</p>
+                            <button id="btn1"><i class="fa-solid fa-check fa-sm"></i></i>Following</button>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h4>Show all Top Voice <span><i class="fa-solid fa-arrow-right"></i></span></h4>
+            </div>
+        </div>
+        <!-- right side -->
+        <div id="rightSide">
+            <div id="ProLang">
+                <div>
+                    <h2>Profile Language </h2>
+                    <span><i class="fa-solid fa-pencil"></i></span>
+                </div>
+               
+                <p id="para" class="paragraph">English</p>
+
+                <hr id="hr1">
+                <div>
+                    <h2>Public profile & URL</h2>
+                    <span><i class="fa-solid fa-pencil"></i></span>
+                </div>
+               
+
+                <p  id="para" class="paragraph">www.linkedin.com/in/ankit-kumar-377849254</p>
+            </div>
+            
+            <div id="div2">
+                <div>
+                    
+                </div>
+                <div id="left-img1">
+                    <img src="https://media.licdn.com/dms/image/v2/D560BAQEv37ZLRLYtaQ/company-logo_100_100/company-logo_100_100/0/1696062880490/ant_international_logo?e=1742428800&v=beta&t=ej4C93QMkdwN96wDCHrYedZV_gVb7qN5kH3VaBJZRKs" alt="">
+                </div>
+                <h4>Ant International</h4>
+                <p class="paragraph">Ankit, grow your business with news and insights from Ant International <br>
+                Stay informed on industry news and trends</p>
+                <button>Follow</button>
+                
+                
+            </div>
+            <div id="div3">
+                <div>
+                    <h3>More profiles for you</h3>
+                </div>
+               
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/C5603AQH6YLJNpKYptw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1645321274249?e=1740009600&v=beta&t=IvqDVpsyTbrBtptN8BqQetaCtFFUUE9eTWNxAEoLemk" alt="">
+                    </div>
+                    <div>
+                        <p id="para"class="paragraph"><b>Prateek Shukla</b>·2nd</p> 
+                        
+                        <p class="paragraph">Masai School | TedX & Josh Talk Speaker | 35 Under 35 | 40...</p>
+                        <button id="btn1">View profile</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQEjL1dP46Z0jA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1726670264392?e=1740009600&v=beta&t=JiS-X3ppvXn-HSOfyisNZmxkgtH34k5kXmgrlEko9sE" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>Srinandan M N</b>·1st</p>
+                        <p class="paragraph">Aspiring Web Developer | BCA Graduate | Passionate about...</p>
+                        <button id="btn1"><span><i class="fa-solid fa-paper-plane"></i></span>Message</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHbPOZgb0Xr9g/profile-displayphoto-shrink_100_100/B4EZOiIipXHsAU-/0/1733591969622?e=1740009600&v=beta&t=26MMN7yyNBLnVibTeUg_JQ3DaZ4-ImeNsvEbOI4gBeg" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>Prince Kesharwani</b>·1st</p>
+                        <p class="paragraph">Student at @MASAI | JavaScript | HTML | CSS | Full Stack Web...</p>
+                        <button id="btn1"> <span><i class="fa-solid fa-paper-plane"></i></span>Message</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/C5603AQGEUprWeEfyEA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1639128250523?e=1740009600&v=beta&t=rycEnt9vmHkjhx0jPpntuMSJxI7vzKnIGi4PjncsCOE" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>
+                            Rutuvik Patil
+                          
+                          
+                          </b>·2nd</p> 
+                        <p class="paragraph">Full Stack Developer | MERN Stack | Scalable Web Solutions...</p>
+                        <button id="btn1"><i class="fa-solid fa-user-plus"></i>Connect</button>
+                    </div>
+                </div>
+                <hr>
+                <h4>Show all</h4>
+              
+            </div>
+            <!-- next div -->
+            <div id="div3">
+                <div>
+                    <h3>Explore Premium profiles</h3>
+                </div>
+               
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQEwppn4qa4wpw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1720730552104?e=1740009600&v=beta&t=0ffsytjkgysc6I0sjk8E3_rTe-tryJG6XKDpMdehhhY" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>Roushan Jha </b> <span><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i></span>·2nd</p> 
+                        <p class="paragraph">Student at Kalinga Institute of Industrial Technology,...</p>
+                        <button id="btn1"><i class="fa-solid fa-plus"></i> Follow</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5635AQE81jD3DAvAOA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1732477713850?e=1735232400&v=beta&t=VVrzPUTQFr1YwE6df5A9KAtfKiRd-erh_L8pr3u7dkg" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b> ankul dubey</b> <span><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i></span>·2nd</p> 
+            
+                        <p class="paragraph"> United institute of technology
+                            5 ⭐ java, 5 ⭐ c++ on...</p>
+                        <button id="btn1"><i class="fa-solid fa-plus"></i> Follow</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5635AQFDvycIRhWXkA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1734274823119?e=1735239600&v=beta&t=2kPae39utbPK5wwYGC6IY4TCAZiSTNg5CjSjgRl1b68" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>Vinay Rinait</b> <span><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i></span>·2nd</p> 
+                        <p class="paragraph"> React Js | Node Js | React Native | JavaScript | DSA |...</p>
+                        <button id="btn1"><i class="fa-solid fa-plus"></i> Follow</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQH6afZGLCB4ZA/profile-displayphoto-shrink_100_100/B56ZOlt.98GoAU-/0/1733652116196?e=1740009600&v=beta&t=NgESafOGbH_VQaIE_8zNqGXuCGkqu26AQVNLIkpmelU" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>Harsh Rai</b><span><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i></span>·2nd</p> 
+                       
+                        <p class="paragraph">ServiceNow Developer at Kumori Technologies | Premier...</p>
+                        <button id="btn1"><i class="fa-solid fa-plus"></i> Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div id="div3">
+                <div>
+                    <h3>People you may know</h3>
+                    <p id="para" class="paragraph">From your industry</p>
+                </div>
+               
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFKB9mpjeshtA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1701523354791?e=1740009600&v=beta&t=BXz9m2Mi007hkx9jTKfBG2kAOPRR7_SIOnqjNqJ9b20" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>YASH VAISHNAV profile</b></p>
+                        <p class="paragraph">Full Stack Web Developer | React.js | Redux | MongoDB |...</p>
+                        <button id="btn1"><i class="fa-solid fa-user-plus"></i>Connect</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQEyEDlXzrmYWA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1709558189058?e=1740009600&v=beta&t=2UhqOiBbYkUYqgR2yVWUm4oSAznlzbsDlucxzRaFFVA" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>Madhu Mishra </b></p>
+                        <p class="paragraph">Full stack developer | | Masai Alumini | | HTML | | CSS | | SQL |...</p>
+                        <button id="btn1"><i class="fa-solid fa-user-plus"></i>Connect</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHz3SHUn4JQ4A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729607122290?e=1740009600&v=beta&t=y8kxwQVKg6yfEW_qOhVejm86Iz9-uVYMGJQQks_5_1I" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>Sai Teja Pappala</b><span><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i></span></p> 
+    
+                        <p class="paragraph">--</p>
+                        <button id="btn1"><i class="fa-solid fa-user-plus"></i>Connect</button>
+                    </div>
+                </div>
+                <hr id="hr1">
+                <div id="more-profile">
+                    <div>
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGiJjmPZL2B-w/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1707583848068?e=1740009600&v=beta&t=KFOzCFubQqcyL_eOT0cYLT_DbcGaBuc35OKlVjUYUoI" alt="">
+                    </div>
+                    <div>
+                        <p id="para" class="paragraph"><b>shlok gaikwad</b>·2nd</p> 
+                        <p class="paragraph">Full Stack Web Developer | Node JS | Express JS |...</p>
+                        <button id="btn1"><i class="fa-solid fa-user-plus"></i>Connect</button>
+                    </div>
+                </div>
+                <hr>
+                <h4>Show all</h4>
+            </div>
+            <div>
+                <img src="https://media.licdn.com/media/AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- message -->
+    <div id="messagingPanel" onclick="toggleMessagingPanel()" class="messaging-panel">
+        <div class="messaging-header">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFQcRBJoMoODg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1688129335138?e=1740009600&v=beta&t=GT2k4QjdAeglA8zekmzBURr6G_rY8jhgYNMYqwof1aI" alt="Profile Picture">
+            Messaging
+            <div id="messaging-icon">
+                <span><i class="fa-solid fa-ellipsis"></i></span>
+                <span><i class="fa-regular fa-pen-to-square"></i></span>
+                <span><i class="fa-solid fa-caret-up"></i></span>
+            </div>
+           
+        </div>
+        <div class="messaging-search">
+            <input type="text" id="searchInput" placeholder="Search messages" onkeyup="filterMessages()">
+        </div>
+
+        <div id="messageList" class="message-list">
+
+        </div>
+    </div>
+   <!-- footer section  -->
+    <footer id="footer">
+        <div id="footer1">
+            <div>
+                <a href="https://about.linkedin.com/">About</a>
+                <a href="https://www.linkedin.com/legal/professional-community-policies">Professional Community Policies</a>
+                <a >Privacy & Terms <span><i class="fa-solid fa-caret-down"></i></span></a>
+                <a href="https://business.linkedin.com/sales-solutions?trk=flagship_nav&veh=li-footer-lss-control&src=li-footer">Sales Solutions</a>
+                <a href="https://about.linkedin.com/transparency">Safety Center</a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/accessibility">Accessibility</a>
+                <a href="https://careers.linkedin.com/">Careers</a>
+                <a href="https://www.linkedin.com/help/linkedin/answer/a1342443/">Ad Choices</a>
+                <a href="https://mobile.linkedin.com/">Mobile</a>
+            </div>
+            <div>
+               <a href="https://business.linkedin.com/en-in/talent-solutions?trk=flagship_nav&veh=li-footer-lts-control-en-in&src=li-footer">Talent Solution</a>
+               <a href="https://business.linkedin.com/marketing-solutions?trk=n_nav_lms_f&src=li-footer">Marketing Solution</a>
+               <a href="https://business.linkedin.com/marketing-solutions/ads-i?trk=n_nav_ads_f&adobe_mc_sdid=SDID%3D0F238D7633E56417-512F603BE277B8AF%7CMCORGID%3D14215E3D5995C57C0A495C55%40AdobeOrg%7CTS%3D1734700250&adobe_mc_ref=https%3A%2F%2Fwww.linkedin.com%2F">Adverstising</a>
+               <a href="https://business.linkedin.com/?&src=li-footer">Small Business</a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/help/linkedin?trk=d_flagship3_profile_view_base"><b><i class="fa-solid fa-question"></i>Questions?</b></a>
+               <a href="#">Visit Our Help Center</a>
+                <a href="https://www.linkedin.com/mypreferences/d/categories/account"><b> <i class="fa-solid fa-gear"></i>Manage your account and privacy</b></a>
+               <a href="#">Go to your Setting</a>
+               <a href="https://www.linkedin.com/help/linkedin/answer/a1339724"> <b><i class="fa-solid fa-shield"></i>Recommendation transparency</b></a>
+    
+               <a href="">Learn more about Recommended Content</a>
+            </div>
+            <div>
+               <a href="">Select Language</a>
+               <select name="" id="select1" >
+                <option value="English">English(English)</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Tamil">Tamil</option>
+                <option value="kannad">kannad</option>
+                <option value="urdu">Urdu</option>
+               </select>
+            </div>
+        </div>
+       
+       <div id="f1">
+            <img
+              src="./photos/linkedin-logo-full.png"
+              alt="linkedin-logo-full-img"
+              style="width: auto; height: 0.9rem"
+            /> <p id="f1-para">Clone by Ankit © 2024</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script src="./script.js"></script>

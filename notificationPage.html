@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn notification</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/d7aaf20f1c.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg">
+    <link rel="icon" href="vecteezy_linkedin-png-icon_16716470.png">
+</head>
+<body>
+    <!-- navbar -->
+    <header class="header">
+        <div class="left-section">
+            <a href="index.html"><img class="logo" src="icons/linkedin logo icon.svg"></a>
+            <input class="search-box" type="text"  placeholder="Search" >
+            
+        </div>
+        <div class="middle-section">
+            <div class="top-icon">
+                <a href="index.html"> <img class="home" src="icons/home.svg"></a>
+                <label><a href="./index.html">Home</a></label>
+              
+            </div>
+            <div class="top-icon">
+                <img style="height: 20px;" class="home" src="icons/users-svgrepo-com.svg">
+                <label><a href="./mynetwork.html">My Network</a></label>
+            </div>
+            <div class="top-icon">
+                <a href="./jobs.html"> <img style="height: 20px;" class="home" src="icons/portfolio-suitcase-svgrepo-com.svg" ></a>
+                <!-- <img style="height: 20px;" class="home" src="icons/portfolio-suitcase-svgrepo-com.svg" > -->
+                <label><a href="./jobs.html">Jobs</a></label>
+            </div>
+            <div class="top-icon">
+                <img class="home" src="icons/chat-square-plain-2-svgrepo-com.svg">
+                <label><a href="#">Messaging</a></label>
+            </div>
+            <div class="notification-container">
+               <img class="notification" src="icons/notification-svgrepo-com.svg">
+                <label><a href="./notificationPage.html">Notifications</a></label>
+                <a href="./notificationPage.html"><div style="font-size: 14px;" class="notification-alert">3</div></a>
+            </div>
+            <div class="me-icon">
+                <div class="profile-container">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFQcRBJoMoODg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1688129335138?e=1740009600&v=beta&t=GT2k4QjdAeglA8zekmzBURr6G_rY8jhgYNMYqwof1aI" alt="Profile" class="profile-picture" onclick="toggleDropdown()">
+                    <div class="dropdown">
+                        <div class="dropdown-header">
+                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFQcRBJoMoODg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1688129335138?e=1740009600&v=beta&t=GT2k4QjdAeglA8zekmzBURr6G_rY8jhgYNMYqwof1aI" alt="Profile">
+                            <div>
+                                <strong><a href="./Ankit.html">Ankit Kumar</a></strong>
+                                Software Developer | Java<br>Sprint Boot | Microservices
+                            </div>
+                        </div>
+                        <a href="index.html" class="view-profile">View Profile</a>
+                        <div class="dropdown-section">
+                            <h4>Account</h4>
+                            <a href="#">Try 1 month of Premium for ₹0</a>
+                            <a href="#">Settings & Privacy</a>
+                            <a href="#">Help</a>
+                            <a href="#">Language</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Manage</h4>
+                            <a href="#">Posts & Activity</a>
+                            <a href="#">Job Posting Account</a>
+                            <a id="logoutButton" style="cursor:pointer">Sign out</a>
+                        </div>
+                    </div> 
+                    <label style="opacity: 0.6;font-family: bold;">Me<i class="fa fa-sort-desc"></i></label>
+                </div>
+            </div> 
+        </div>
+        <div class="right-section">
+            <div class="top-icon">
+            <img style="height: 20px;" class="home" onclick="toggleDropdown()" src="icons/square-4-grid-svgrepo-com.svg">
+            <label>For Business</label>
+            <div class="navbar">
+            </div>
+        
+            <div id="businessModal" class="dropdown-modal">
+                <div class="section">
+                    <div class="section-column">
+                        <h3>My Apps</h3>
+                        <ul>
+                            <li><span>Sell</span></li>
+                            <li><span>Groups</span></li>
+                            <li><span>Talent Insights</span></li>
+                            <li><span>Post a job</span></li>
+                            <li><span>Services Marketplace</span></li>
+                            <li><span>Advertise</span></li>
+                            <li><span>Learning</span></li>
+                        </ul>
+                    </div>
+        
+                    <div class="section-column">
+                        <h3>Explore more for business</h3>
+                        <ul>
+                            <li><a href="#">Hire on LinkedIn</a> <span>- Find, attract and recruit talent</span></li>
+                            <li><a href="#">Sell with LinkedIn</a> <span>- Unlock sales opportunities</span></li>
+                            <li><a href="#">Post a job for free</a> <span>- Get qualified applicants quickly</span></li>
+                            <li><a href="#">Advertise on LinkedIn</a> <span>- Acquire customers and grow your business</span></li>
+                            <li><a href="#">Get started with Premium</a> <span>- Expand and leverage your network</span></li>
+                            <li><a href="#">Learn with LinkedIn</a> <span>- Courses to develop your employees</span></li>
+                            <li><a href="#">Admin Center</a> <span>- Manage billing and account details</span></li>
+                        </ul>
+                        <a href="#" class="footer-link">Create a Company Page +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-icon">
+            <img style="height: 20px;" class="home" src="icons/business-svgrepo-com.svg">
+            <label>Post a job</label>
+        </div> 
+        </div>
+    </header>
+     <!-- main -->
+    <div id="notificationPage">
+        <div id="left-part">
+            <div id="left-part1">
+                <div id ="profilePic">
+                    <img id="img1" src="https://media.licdn.com/dms/image/v2/D5616AQG5pQjR3TzgfQ/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1719683489432?e=1740009600&v=beta&t=nNiEzqxXbrWgRALBd80p0chSkQzQDSPufOI1D8R9ZDE" alt="backGround-image">
+                    <img id = "img2"src="https://media.licdn.com/dms/image/v2/D4D03AQFQcRBJoMoODg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1688129335138?e=1740009600&v=beta&t=GT2k4QjdAeglA8zekmzBURr6G_rY8jhgYNMYqwof1aI" alt="profile-image">
+                </div>
+                <div id="name1">
+                    <h2>Ankit Kumar</h2>
+                    <p class="para1">Non it sector to move in it sector</p>
+                    <p id="para" class="para1">Kanpur, Uttar Pradesh</p>
+                </div>
+                <div id="name2">
+                    <img src="https://media.licdn.com/dms/image/v2/C560BAQFmsvAyTyFrZA/company-logo_100_100/company-logo_100_100/0/1630565723894/chatrapati_sahuji_maharaj_kanpur_university_kanpur_logo?e=1743033600&v=beta&t=lNYkiq_4Fxr5HbLjSY_J7HZffSxXXJGE-KEoLRLOFXo" alt="">
+                    <p class="para1"><b>Chatrapati Sahuji Maharaj Kanpur University</b></p>
+                </div>
+            </div>
+            <div id="left-part2">
+                <h2>Manage your</h2>
+                <h2>Notifications</h2>
+                <a href=""><b>View Settings</b></a>
+            </div>
+        </div>
+        <div id="mid-part">
+            <div id="BtnGroup1">
+                <button id="btn1">All</button>
+                <button id="btn3">Jobs</button>
+                <button id="btn3">My posts</button>
+                <button id="btn3">Mentions</button>
+            </div>
+            <div id="mid-part1">
+                <div class="notification-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqItMEHRi0-glvCU-WK_IttS5ehFZCG5qrQ&s" alt="Profile">
+                    <div class="notification-content">
+                        <span>Yashaswini K viewed your profile. See all views.</span>
+                        <span class="notification-time">41m</span>
+                    </div>
+                </div>
+              
+                <div class="notification-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqItMEHRi0-glvCU-WK_IttS5ehFZCG5qrQ&s" alt="Profile">
+                    <div class="notification-content">
+                        <span>HackerRank posted: Let your true developer voice be heard!</span>
+                        <span class="notification-time"></i>1h</span>
+                    </div>
+                </div>
+                
+                <div class="notification-card">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQEso7fud9gang/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1724387139214?e=1740009600&v=beta&t=i3dBOmkia9yMIF43COP74SIU9cojfRRnXdsux8IysLg" alt="Profile">
+                    <div class="notification-content">
+                        <span>Mojesh Vutla reposted a photo.</span>
+                        <span class="notification-time">3h</span>
+                    </div>
+                </div>
+                
+                <div class="notification-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqItMEHRi0-glvCU-WK_IttS5ehFZCG5qrQ&s" alt="Profile">
+                    <div class="notification-content">
+                        <span>Premium found 240+ jobs where you’d be a top applicant. Get a sneak peek.</span>
+                        <span class="notification-time">3h</span>
+                    </div>
+                </div>
+              
+                <div class="notification-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqItMEHRi0-glvCU-WK_IttS5ehFZCG5qrQ&s" alt="Profile">
+                    <div class="notification-content">
+                        <span>Your post has reached 79 impressions so far. View your post analytics.</span>
+                        <span class="notification-time">7h</span>
+                    </div>
+                </div>
+                <div class="notification-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqItMEHRi0-glvCU-WK_IttS5ehFZCG5qrQ&s" alt="Profile">
+                    <div class="notification-content">
+                        <span>Your post has reached 79 impressions so far. View your post analytics.</span>
+                        <span class="notification-time">7h</span>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        
+        
+        <div id="right-part">
+            <div id="div2">
+                <div>
+                    
+                </div>
+                <div id="left-img1">
+                    <img src="https://media.licdn.com/dms/image/v2/C4D0BAQG9Ob7Yoi_hEQ/company-logo_100_100/company-logo_100_100/0/1673433901363?e=1743033600&v=beta&t=tS4sBsVXq-T8fLTsZ7CNVRe-lT221WSrVMgBP-CHpI8" alt="">
+                </div>
+                <h4>Nuvama Private</h4>
+                <p>Grow your business with insights from Nuvama Private <br>
+                    Opportunities are knocking on your door</p>
+                <button>Follow</button>
+                
+                
+            </div>
+            <div id="right-part1">
+                <div>
+                    <a href="https://about.linkedin.com/">About</a>
+                    <a href="https://www.linkedin.com/accessibility">Accessibility</a>
+                    <a href="https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_notifications">Help Center</a>
+                </div>
+                <div>
+                    <a href="">Privacy & Terms <span><i class="fa-solid fa-caret-down"></i></span> </a>
+                    <a href="https://www.linkedin.com/help/linkedin/answer/a1342443/">Ad Choices</a>
+                </div>
+                <div>
+                    <a href="https://business.linkedin.com/marketing-solutions/ads?trk=n_nav_ads_rr_b&src=li-nav&veh=ad%2Fstart">Advertising</a>
+                    <a href="">Business Services</a>
+                </div>
+                <div>
+                    <a href="">Get the LinkedIn app</a>
+                    <a href="">More</a>
+                </div>
+                <p id="para"><div id="f1">
+                    <img
+                      src="./photos/linkedin-logo-full.png"
+                      alt="linkedin-logo-full-img"
+                      style="width: auto; height: 0.9rem"
+                    /> <p id="f1-para">Clone by Ankit © 2024</p>
+                </div></p>
+            </div>
+        </div>
+    </div>
+    <div id="messagingPanel" onclick="toggleMessagingPanel()" class="messaging-panel">
+        <div class="messaging-header">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFQcRBJoMoODg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1688129335138?e=1740009600&v=beta&t=GT2k4QjdAeglA8zekmzBURr6G_rY8jhgYNMYqwof1aI" alt="Profile Picture">
+            Messaging
+            <div id="messaging-icon">
+                <span><i class="fa-solid fa-ellipsis"></i></span>
+                <span><i class="fa-regular fa-pen-to-square"></i></span>
+                <span><i class="fa-solid fa-caret-up"></i></span>
+            </div>
+           
+        </div>
+       
+        <div class="messaging-search">
+            <input type="text" id="searchInput" placeholder="Search messages" onkeyup="filterMessages()">
+        </div>
+
+        <div id="messageList" class="message-list">
+
+        </div>
+    </div>
+</body>
+</html>
+<script src="./script.js"></script>

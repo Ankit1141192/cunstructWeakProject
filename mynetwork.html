@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1eff5ac3a2.js" crossorigin="anonymous"></script>
+
+   
+    <link rel="stylesheet" href="./style.css">
+    <title>My Network</title>
+</head>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <a href="index.html"><img class="logo" src="icons/linkedin logo icon.svg"></a>
+            <input class="search-box" type="text"  placeholder="Search" >
+            
+        </div>
+        <div class="middle-section">
+            <div class="top-icon">
+                <a href="index.html"> <img class="home" src="icons/home.svg"></a>
+                <label><a href="./index.html">Home</a></label>
+              
+            </div>
+            <div class="top-icon">
+                <img style="height: 20px;" class="home" src="icons/users-svgrepo-com.svg">
+                <label><a href="./mynetwork.html">My Network</a></label>
+            </div>
+            <div class="top-icon">
+                <a href="./jobs.html"> <img style="height: 20px;" class="home" src="icons/portfolio-suitcase-svgrepo-com.svg" ></a>
+                <!-- <img style="height: 20px;" class="home" src="icons/portfolio-suitcase-svgrepo-com.svg" > -->
+                <label><a href="./jobs.html">Jobs</a></label>
+            </div>
+            <div class="top-icon">
+                <img class="home" src="icons/chat-square-plain-2-svgrepo-com.svg">
+                <label><a href="#">Messaging</a></label>
+            </div>
+            <div class="notification-container">
+               <img class="notification" src="icons/notification-svgrepo-com.svg">
+                <label><a href="./notificationPage.html">Notifications</a></label>
+                <a href="./notificationPage.html"><div style="font-size: 14px;" class="notification-alert">3</div></a>
+            </div>
+            <div class="me-icon">
+                <div class="profile-container">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80" alt="Profile" class="profile-picture" onclick="toggleDropdown()">
+                    <div class="dropdown">
+                        <div class="dropdown-header">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80" alt="Profile">
+                            <div>
+                                <strong><a href="./Ankit.html">Sameer Ahmed</a></strong>
+                                Software Developer | Java<br>Sprint Boot | Microservices
+                            </div>
+                        </div>
+                        <a href="index.html" class="view-profile">View Profile</a>
+                        <div class="dropdown-section">
+                            <h4>Account</h4>
+                            <a href="#">Try 1 month of Premium for ₹0</a>
+                            <a href="#">Settings & Privacy</a>
+                            <a href="#">Help</a>
+                            <a href="#">Language</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Manage</h4>
+                            <a href="#">Posts & Activity</a>
+                            <a href="#">Job Posting Account</a>
+                            <a id="logoutButton" style="cursor:pointer">Sign out</a>
+                        </div>
+                    </div> 
+                    <label style="opacity: 0.6;font-family: bold;">Me<i class="fa fa-sort-desc"></i></label>
+                </div>
+            </div> 
+        </div>
+        <div class="right-section">
+            <div class="top-icon">
+            <img style="height: 20px;" class="home" onclick="toggleDropdown()" src="icons/square-4-grid-svgrepo-com.svg">
+            <label>For Business</label>
+            <div class="navbar">
+            </div>
+        
+            <div id="businessModal" class="dropdown-modal">
+                <div class="section">
+                    <div class="section-column">
+                        <h3>My Apps</h3>
+                        <ul>
+                            <li><span>Sell</span></li>
+                            <li><span>Groups</span></li>
+                            <li><span>Talent Insights</span></li>
+                            <li><span>Post a job</span></li>
+                            <li><span>Services Marketplace</span></li>
+                            <li><span>Advertise</span></li>
+                            <li><span>Learning</span></li>
+                        </ul>
+                    </div>
+        
+                    <div class="section-column">
+                        <h3>Explore more for business</h3>
+                        <ul>
+                            <li><a href="#">Hire on LinkedIn</a> <span>- Find, attract and recruit talent</span></li>
+                            <li><a href="#">Sell with LinkedIn</a> <span>- Unlock sales opportunities</span></li>
+                            <li><a href="#">Post a job for free</a> <span>- Get qualified applicants quickly</span></li>
+                            <li><a href="#">Advertise on LinkedIn</a> <span>- Acquire customers and grow your business</span></li>
+                            <li><a href="#">Get started with Premium</a> <span>- Expand and leverage your network</span></li>
+                            <li><a href="#">Learn with LinkedIn</a> <span>- Courses to develop your employees</span></li>
+                            <li><a href="#">Admin Center</a> <span>- Manage billing and account details</span></li>
+                        </ul>
+                        <a href="#" class="footer-link">Create a Company Page +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-icon">
+            <img style="height: 20px;" class="home" src="icons/business-svgrepo-com.svg">
+            <label>Post a job</label>
+        </div> 
+        </div>
+    </header>
+   
+   <!-- main  -->
+        <main class="reseaux_main_page">
+            <section class="reseaux_container">
+                <section class="reseaux_left_container">
+                    <div class="my_media">
+                        <h2>Manage my network</h2>
+                        <p><i class="fa-solid fa-user-group"></i>Connections <span>939</span></p>
+                        <p><i class="fa-solid fa-address-book"></i>Following & followers </p>
+                        <p><i class="fa-solid fa-user"></i>Groups</p>
+                        <p><i class="fa-solid fa-calendar-days"></i>Events</p>
+                        <p><i class="fa-solid fa-file"></i>Pages <span>103</span></p>
+                        <p><i class="fa-solid fa-pager"></i>Newsletter <span>1</span></p>
+                       
+                        
+                    </div>
+                    <div class="empty"></div>
+                    <div class="add_new_people">
+                        
+                        <p>boost your job search with Premium <span>Learn more </span></p>
+                        <div class="link"><img src="https://media.licdn.com/dms/image/v2/D560BAQEtGJEPrJk4eQ/company-logo_100_100/company-logo_100_100/0/1728266891944/hyundai_motor_group_logo?e=1743033600&v=beta&t=iJOHMHRLjlH3zKH_rrF9UjPC7xqFFFexRvnqUdkibiM" alt="linkedIn-logo"></div>
+                        <h3>Hyundai Motor Group</h3>
+                        <p>monu, grow your career by following Hyundai Motor Group</p>
+                        <p class="continue"><a href="#">Follow</a></p>
+                    
+                    </div>
+                    <div class="reaseaux_infos">
+                        <p><a href="#"> about</a> <a href="#"> Accessibility</a>    <a href="#">Help Center</a></p>
+                        <p><a href="#">Privacy & Terms</a> <a href="#"> Ad Choice</a> <a href="#">Advertising</a></p>
+                        <p><a href="#">Business Services</a><a href="#">Get the LinkedIn app</a><a href="#">More</a></p>
+                        <p> <div id="f1">
+                            <img
+                              src="./photos/linkedin-logo-full.png"
+                              alt="linkedin-logo-full-img"
+                              style="width: auto; height: 0.9rem"
+                            /> <p id="f1-para">Clone by Monu  © 2024</p>
+                        </div></p>
+                    </div>
+                </section>
+
+       <!-- -------------right box---------------->
+
+                <section class="reseaux_right_container">         
+                    <section class="reseaux_left_container " id="responsive_reseaux_box">
+                   
+                    </section>
+                
+                    <h2 class="invitation_title" >Invitations(1) <span>Show all</span></h2>
+                    <div class="invitations">
+                        <div class="invi_photo_name_info">
+                            <div class="inv_photo_profil">
+                                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQEHzGrkE_U23Q/company-logo_100_100/company-logo_100_100/0/1630636899456/linkedin_news_india_logo?e=2147483647&v=beta&t=_yYp5rYlyLvntYHbKMIJRuedEWWBKvjBGVRyRsO0toA" alt="photo home">
+                            </div>
+                            <div class="inv_name_info">
+                                <p>Newsletter • Biweekly</p>
+                                <h4><a href="#">LinkedIn News India</a>   invited you to subscribe <a href="#">Finance Wrap India</a> </h4>
+          
+                            </div>
+                        </div>        
+                        <p class="refuse">Ignore</p>
+                        <p class="agree">Accept</p>
+                    </div>
+                   
+                   
+                    <div class="games-section">
+                        <h5>Stay in touch through daily games</h5>
+                        <div class="navigation-buttons">
+                          <div class="nav-btn">&lt;</div>
+                          <div class="games-container">
+                            <div class="game-card">
+                              <img src="https://media.licdn.com/media/AAYABATzAAwAAQAAAAAAAInyIpJv34kES7qzS0STkOyrgw.png" alt="Queens">
+                              <h6>Queens #234</h6>
+                              <p>Friday, Dec 20</p>
+                              <button>Play</button>
+                            </div>
+                            <div class="game-card">
+                              <img src="https://media.licdn.com/media/AAYABATzAAwAAQAAAAAAAMf6E0TuucIkSYGFrDoCICokGw.png" alt="Tango">
+                              <h6>Tango #74</h6>
+                              <p>Friday, Dec 20</p>
+                              <button>Play</button>
+                            </div>
+                            <div class="game-card">
+                              <img src="https://media.licdn.com/media/AAYABATzAAwAAQAAAAAAAGVaGbRJrmxWT-aZpUWJq_yroQ.png" alt="Pinpoint">
+                              <h6>Pinpoint #234</h6>
+                              <p>Friday, Dec 20</p>
+                              <button>Play</button>
+                            </div>
+                          </div>
+                          <div class="nav-btn">&gt;</div>
+                        </div>
+                      </div>
+                      
+                    <div class="reseau_page_container">
+                        <h2>Software Engineers you may know <span>Show all</span></h2>
+                        <div class="reseaux_contact_page">
+                            <div class="contact_page_profil">
+                                <div class="backg_reseau_profil">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <img src="https://media.licdn.com/dms/image/v2/D5616AQEnAUSuU30vbg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1705255680961?e=2147483647&v=beta&t=3OuzR6sp1K6g3yE7wjE8bw0R3BtofN5xcXGP495BRe8" alt="#">
+                                    <div class="photo_reseau_profil"> 
+                                        <img src="https://media.licdn.com/dms/image/v2/D5635AQHWdEwwxC0OWA/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1733464841965?e=1735300800&v=beta&t=zTJlyYm2fJjzWuTmHiZevti76Q2bYICWR5Ut2cmJKsw" alt="#">
+                                    </div>
+                                </div>
+                                <p><a href="#">Sachin Kumar Singh</a></p>
+                                <p>Full Stack Developer</p>
+                                
+                                <p>Connect</p>
+                            </div>
+                            <div class="contact_page_profil">
+                                <div class="backg_reseau_profil">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <img src="https://media.licdn.com/dms/image/v2/C5616AQGmFHxmBcLSfg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1640361447270?e=2147483647&v=beta&t=cpRPxllM5EMe2_c-n42GbueVyhPbyrzdZbIB2UVZJP8" alt="#">
+                                    <div class="photo_reseau_profil"> 
+                                        <img src="https://media.licdn.com/dms/image/v2/C5603AQF2yARxAROH8A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1640532323700?e=2147483647&v=beta&t=mUiei0qg5OUk5O7itRPugmyoG3Fo91JzeZkiEc_Mm18" alt="">
+                                    </div>
+                                </div>
+                                <p><a href="#">Prakash Chanchal</a></p>
+                                <p>Lead fronted developer</p>
+                                
+                                <p>Connect</p>
+                            </div>
+                            <div class="contact_page_profil">
+                                <div class="backg_reseau_profil">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <img src="https://media.licdn.com/dms/image/v2/D4D16AQH4Kw7r1enK-Q/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1677666667379?e=2147483647&v=beta&t=qZ_wZZCBSwrWu-UQEtpRbSZGKdKgVwToeLL4OwPcYRY" alt="#">
+                                    <div class="photo_reseau_profil"> 
+                                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHunMf_FIpYcQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1670149486706?e=2147483647&v=beta&t=6yeyEH07hoiB63ZJOVQQJkbLOxudBmvRP04V3hYG4pk" alt="">
+                                    </div>
+                                </div>                          
+                                <p><a href="#">Kailash Chandra</a></p>
+                                <p>Fronted developer</p>
+                                <p>Connect</p>
+                            </div>
+                            <div class="contact_page_profil">
+                                <div class="backg_reseau_profil">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <img src="https://media.licdn.com/dms/image/v2/D5616AQFGFlAsy6jN6g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1714240754169?e=2147483647&v=beta&t=ressqekmwsB2ReNEoz9EvEWXnEOOiETXzJpX8SxTm7c" alt="#">
+                                    <div class="photo_reseau_profil"> 
+                                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGaZRJbAH3TXQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1732100598347?e=2147483647&v=beta&t=dkU7A3BHuykF_2Pz9KbiN21lN8t4KoZUuZxusc5sJuk" alt="">
+                                    </div>
+                                </div>
+                                <p><a href="#">Prachi Singh Sherawat</a></p>
+                                <p>MERN Stack Developer</p>
+                                <p>Connect</p>
+                            </div>
+                        </div>
+                        <div class="reseaux_contact_page second_reseaux_contact">
+                            <div class="contact_page_profil">
+                                <div class="backg_reseau_profil">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <img src="https://media.licdn.com/dms/image/v2/D5616AQG3eb97kgbGbA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1726837814241?e=2147483647&v=beta&t=k2a20FnrTFOhrvFu7Pj6SuvzWrqWXB2QeorXadOiVS8" alt="#">
+                                    <div class="photo_reseau_profil"> 
+                                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGbWnnVt8plaA/profile-displayphoto-shrink_200_200/B56ZPVFvq7HoAY-/0/1734446874306?e=2147483647&v=beta&t=wcvfnga8Ged1yN9UZTQPx01By6iEwpcG39adsj4mZ2o" alt="">
+                                    </div>
+                                </div>
+                                <p><a href="#">Diksha Katyura</a></p>
+                                <p>Frontend Developer</p>
+                                <p>Connect</p>
+                            </div>
+                            <div class="contact_page_profil">
+                                <div class="backg_reseau_profil">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <img src="https://media.licdn.com/dms/image/v2/D5616AQFGFlAsy6jN6g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1714240754169?e=2147483647&v=beta&t=ressqekmwsB2ReNEoz9EvEWXnEOOiETXzJpX8SxTm7c" alt="#">
+                                    <div class="photo_reseau_profil"> 
+                                        <img src="https://media.licdn.com/dms/image/v2/D5603AQEFS3oDLJK9gQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718291803349?e=2147483647&v=beta&t=tREpqt0Hdo5qWBdoaddzJvKKdDlCfeooCh8Wmp0waq8" alt="">
+                                    </div>
+                                </div>                              
+                                <p><a href="#">Yogesh Negi</a></p>
+                                <p>Software Developer</p>
+                                <p>Connect</p>
+                            </div>
+                            <div class="contact_page_profil">
+                                <div class="backg_reseau_profil">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <img src="https://media.licdn.com/dms/image/v2/C4D16AQEi3H9hvGMLPA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1668677639458?e=2147483647&v=beta&t=aceGIPppg9IRrEUwdpq5Ah_R841OC8sZi2a9r7fzIzk" alt="#">
+                                    <div class="photo_reseau_profil"> 
+                                        <img src="https://media.licdn.com/dms/image/v2/D5635AQHBZnimU-mLZQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1723798668170?e=1735300800&v=beta&t=cWVYXhKh5BAj7f3o9OmyH0ORRv5PKk8PByeCR8_Ye0M" alt="">
+                                    </div>
+                                </div>                    
+                                <p><a href="#">Anurag Kumar Yadav</a></p>
+                                <p>Full Stack Developer</p>
+                                <p>Connect</p>
+                            </div>
+                            <div class="contact_page_profil">
+                                <div class="backg_reseau_profil">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <img src="https://media.licdn.com/dms/image/v2/D5616AQEnAUSuU30vbg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1705255680961?e=2147483647&v=beta&t=3OuzR6sp1K6g3yE7wjE8bw0R3BtofN5xcXGP495BRe8" alt="#">
+                                    <div class="photo_reseau_profil"> 
+                                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHDwC32l8Y6cQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1696327739018?e=2147483647&v=beta&t=vj-JcZCX33CVR74xi1plm4nwkPdtawHPcESTTqs58-0" alt="">
+                                    </div>
+                                </div>                      
+                                <p><a href="#">Indrani Paul</a></p>
+                                <p>Software Engineer</p>
+                                <p>Connect</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="reseau_page_container">
+                            <h2>People you may know from Masai <span>Show all</span></h2>
+                            <div class="reseaux_contact_page">
+                                <div class="contact_page_profil">
+                                    <div class="backg_reseau_profil">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        <img src="https://media.licdn.com/dms/image/v2/D5616AQGKC3SkVbCFfQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1722180440692?e=2147483647&v=beta&t=WWtO0w-g1CnCpHdBhvcUJ4_wzyHZx7upln7EnfxDk98" alt="#">
+                                        <div class="photo_reseau_profil"> 
+                                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQHNjTsCqXK6iA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727949552641?e=2147483647&v=beta&t=7lGwZdOKqkvORcSEmmGakFUam0Kb902dAWb9VI2nN04" alt="#">
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Nilesh Yadav</a></p>
+                                    <p>Web-developer</p>
+                                    
+                                    <p>Connect</p>
+                                </div>
+                                <div class="contact_page_profil">
+                                    <div class="backg_reseau_profil">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        <img src="https://media.licdn.com/dms/image/v2/D5616AQH3clKnSzx0rg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1720280290290?e=2147483647&v=beta&t=i5I7VlNOxqNXQhtGf4CT9NRhMdY1f0CF0l7vDK0kb8E" alt="#">
+                                        <div class="photo_reseau_profil"> 
+                                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHb306TNdJN0g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1701528238037?e=2147483647&v=beta&t=t2B0jNMt4VVK1zRoiMvmVFP9tgJ_zeWEgZcacKi1W4s" alt="">
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Harshal Apsunde</a></p>
+                                    <p>Developer at Masai School</p>
+                                    <p>Connect</p>
+                                </div>
+                                <div class="contact_page_profil">
+                                    <div class="backg_reseau_profil">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        <img src="https://media.licdn.com/dms/image/v2/D4D16AQHHSj27hOccpQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1695818282446?e=2147483647&v=beta&t=H1Cu50YfReNgxT_bjt70xHMBL-VIzY-Bie2Oukm3y-k" alt="#">
+                                        <div class="photo_reseau_profil"> 
+                                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQENhiD2IrDUEA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715844227716?e=2147483647&v=beta&t=8skv0zbDaGMhOvo8klk8toDnqQTDDfDdVrmmJOLpLXo" alt="">
+                                        </div>
+                                    </div>                          
+                                    <p><a href="#">Dinesh Patil</a></p>
+                                    <p>Full Stack Developer</p>
+                                    <p>Connect</p>
+                                </div>
+                                <div class="contact_page_profil">
+                                    <div class="backg_reseau_profil">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        <img src="https://media.licdn.com/dms/image/v2/D4D16AQH3605AuDA_ng/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1686076834726?e=2147483647&v=beta&t=eWpk6JIyttnP0snWZLtqGYWkI3ggSaJNbGIEhHbHV4U" alt="#">
+                                        <div class="photo_reseau_profil"> 
+                                            <img src="https://media.licdn.com/dms/image/v2/D4D35AQGWUQIrwRSsKA/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1686071498461?e=1735304400&v=beta&t=mwqATGGRK1YwBIwPUxd-Tg6edFnwuJFutBUxwiULpMo" alt="">
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Harshit Sahu</a></p>
+                                    <p>Node.js Developer</p>
+                                    <p>Connect</p>
+                                </div>
+                            </div>
+                            <div class="reseaux_contact_page second_reseaux_contact">
+                                <div class="contact_page_profil">
+                                    <div class="backg_reseau_profil">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        <img src="https://media.licdn.com/dms/image/v2/D5616AQGMO0oKOJlcog/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1729442995713?e=2147483647&v=beta&t=l27p40ZdPj7WgNFHP9JUhJ5ty2tL-Q11TdL5Dsu2fz0" alt="#">
+                                        <div class="photo_reseau_profil"> 
+                                            <img src="https://media.licdn.com/dms/image/v2/D5635AQGpDN9D2gmbQQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1724770937721?e=1735304400&v=beta&t=gP758MLUJCSTQKY6oZQv9g2dzrnOKzboZLe4ueNHwHA" alt="">
+                                        </div>
+                                    </div>
+                                    <p><a href="#">Lalit Sharma</a></p>
+                                    <p>Full Stack Developer</p>
+                                    <p>Connect</p>
+                                </div>
+                                <div class="contact_page_profil">
+                                    <div class="backg_reseau_profil">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        <img src="https://media.licdn.com/dms/image/v2/D5616AQGseb6Mzj3yag/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1728637712047?e=2147483647&v=beta&t=LnyiG9UpYwoQ7mVb-DDl-24bqPctDIMgWgt2kOWNQeI" alt="#">
+                                        <div class="photo_reseau_profil"> 
+                                            <img src="https://media.licdn.com/dms/image/v2/C4E03AQFKFpof-b580g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1637755121247?e=2147483647&v=beta&t=--r7Wfyp8KWgqIAGO9hr7cXfEWvyWM8bz5C55NM7Dek" alt="">
+                                        </div>
+                                    </div>                              
+                                    <p><a href="#">Siddhanth Jain</a></p>
+                                    <p>Senior Manager</p>
+                                    <p>Connect</p>
+                                </div>
+                                <div class="contact_page_profil">
+                                    <div class="backg_reseau_profil">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        <img src="https://media.licdn.com/dms/image/v2/D4E16AQHfqWUp-YWbEg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1730204550106?e=2147483647&v=beta&t=7n4rZ9ju2MRGenRNRqLTwfbvAMYA9aVMG_lch7OLwqw" alt="#">
+                                        <div class="photo_reseau_profil"> 
+                                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQGPM_e2ToMAbA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1730204680552?e=2147483647&v=beta&t=UsCSXffBecROkeDZmPyVq9VeW2IU71WxEqQsfM0dPkI" alt="">
+                                        </div>
+                                    </div>                    
+                                    <p><a href="#">Rashmi Ninawe</a></p>
+                                    <p>Aspring Software Engineer</p>
+                                    <p>Connect</p>
+                                </div>
+                                <div class="contact_page_profil">
+                                    <div class="backg_reseau_profil">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        <img src="https://media.licdn.com/dms/image/v2/D4D16AQE_xCT2Tu8itg/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1722397528136?e=2147483647&v=beta&t=bJ7FA3NzpWIhhjZ7hP4cCcXxVqYUwgZalTAsvlJA4H8" alt="#">
+                                        <div class="photo_reseau_profil"> 
+                                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEOLnhKpp6zvQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1664832803363?e=2147483647&v=beta&t=lh9lK45-3z9oBXBjs7huOiVTkEyQwAopIdzdCbzARtU" alt="">
+                                        </div>
+                                    </div>                      
+                                    <p><a href="#">Ashwini Prakash</a></p>
+                                    <p>Software Developer</p>
+                                    <p>Connect</p>
+                                </div>
+                            </div>
+                            </div>
+                </section>
+            </section>
+        </main>
+        <div id="messagingPanel" onclick="toggleMessagingPanel()" class="messaging-panel">
+            <div class="messaging-header">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80" alt="Profile Picture">
+                Messaging
+                <div id="messaging-icon">
+                    <span><i class="fa-solid fa-ellipsis"></i></span>
+                    <span><i class="fa-regular fa-pen-to-square"></i></span>
+                    <span><i class="fa-solid fa-caret-up"></i></span>
+                </div>
+            </div>
+            <div class="messaging-search">
+                <input type="text" id="searchInput" placeholder="Search messages" onkeyup="filterMessages()">
+            </div>
+    
+            <div id="messageList" class="message-list">
+
+            </div>
+        </div>
+    
+</body>    
+</html>
+<script src="./script.js"></script>

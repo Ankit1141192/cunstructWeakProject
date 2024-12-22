@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIN Clone</title>
+    <link rel="icon" href="./photos/favicon-32x32.png" type="image/x-icon">
+    <link href="linkedin.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7aaf20f1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src="app.js"></script>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <a href="index.html"><img class="logo" src="icons/linkedin logo icon.svg"></a>
+            <input class="search-box" type="text"  placeholder="Search" >
+            
+        </div>
+        <div class="middle-section">
+            <div class="top-icon">
+                <a href="index.html"> <img class="home" src="icons/home.svg"></a>
+                <label><a href="./index.html">Home</a></label>
+              
+            </div>
+            <div class="top-icon">
+                <img style="height: 20px;" class="home" src="icons/users-svgrepo-com.svg">
+                <label><a href="./mynetwork.html">My Network</a></label>
+            </div>
+            <div class="top-icon">
+                <a href="./jobs.html"> <img style="height: 20px;" class="home" src="icons/portfolio-suitcase-svgrepo-com.svg" ></a>
+
+                <label><a href="./jobs.html">Jobs</a></label>
+            </div>
+            <div class="top-icon">
+                <img class="home" src="icons/chat-square-plain-2-svgrepo-com.svg">
+                <label><a href="#">Messaging</a></label>
+            </div>
+            <div class="notification-container">
+               <img class="notification" src="icons/notification-svgrepo-com.svg">
+                <label><a href="./notificationPage.html">Notifications</a></label>
+                <a href="./notificationPage.html"><div style="font-size: 14px;" class="notification-alert">3</div></a>
+            </div>
+            <div class="me-icon">
+                <div class="profile-container">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80" alt="Profile" class="profile-picture" onclick="toggleDropdown()">
+                    <div class="dropdown">
+                        <div class="dropdown-header">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80" alt="Profile">
+                            <div>
+                                <strong><a href="./Ankit.html">Sameer Ahmed</a></strong>
+                                Software Developer | Java<br>Sprint Boot | Microservices
+                            </div>
+                        </div>
+                        <a href="index.html" class="view-profile">View Profile</a>
+                        <div class="dropdown-section">
+                            <h4>Account</h4>
+                            <a href="#">Try 1 month of Premium for ₹0</a>
+                            <a href="#">Settings & Privacy</a>
+                            <a href="#">Help</a>
+                            <a href="#">Language</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Manage</h4>
+                            <a href="#">Posts & Activity</a>
+                            <a href="#">Job Posting Account</a>
+                            <a id="logoutButton" style="cursor:pointer">Sign out</a>
+                        </div>
+                    </div> 
+                    <label style="opacity: 0.6;font-family: bold;">Me<i class="fa fa-sort-desc"></i></label>
+                </div>
+            </div> 
+        </div>
+        <div class="right-section">
+            <div class="top-icon">
+            <img style="height: 20px;" class="home" onclick="toggleDropdown()" src="icons/square-4-grid-svgrepo-com.svg">
+            <label>For Business</label>
+            <div class="navbar">
+            </div>
+        
+            <div id="businessModal" class="dropdown-modal">
+                <div class="section">
+                    <div class="section-column">
+                        <h3>My Apps</h3>
+                        <ul>
+                            <li><span>Sell</span></li>
+                            <li><span>Groups</span></li>
+                            <li><span>Talent Insights</span></li>
+                            <li><span>Post a job</span></li>
+                            <li><span>Services Marketplace</span></li>
+                            <li><span>Advertise</span></li>
+                            <li><span>Learning</span></li>
+                        </ul>
+                    </div>
+        
+                    <div class="section-column">
+                        <h3>Explore more for business</h3>
+                        <ul>
+                            <li><a href="#">Hire on LinkedIn</a> <span>- Find, attract and recruit talent</span></li>
+                            <li><a href="#">Sell with LinkedIn</a> <span>- Unlock sales opportunities</span></li>
+                            <li><a href="#">Post a job for free</a> <span>- Get qualified applicants quickly</span></li>
+                            <li><a href="#">Advertise on LinkedIn</a> <span>- Acquire customers and grow your business</span></li>
+                            <li><a href="#">Get started with Premium</a> <span>- Expand and leverage your network</span></li>
+                            <li><a href="#">Learn with LinkedIn</a> <span>- Courses to develop your employees</span></li>
+                            <li><a href="#">Admin Center</a> <span>- Manage billing and account details</span></li>
+                        </ul>
+                        <a href="#" class="footer-link">Create a Company Page +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-icon">
+            <img style="height: 20px;" class="home" src="icons/business-svgrepo-com.svg">
+            <label>Post a job</label>
+        </div> 
+        </div>
+    </header>
+    <main class="main">
+        <div class="left-main">
+           <div class="left-main-1">
+            <img class="banner" src="photos/cover-image.jpg">
+            <img class="my-picture" src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80">
+            <div class="about">
+                <h5><a href="./index.html">Sameer Ahmed</a></h5>
+                <P>Software Developer |<br> Java | Spring Boot | Spring MVC <br>Microservices</P>
+            </div>
+            <div class="analytics">
+                <h5>Profile Viewers 103</h5>
+                <p>View all Analytics</p>
+            </div>
+            <div class="premium">
+                <p>Access exclusive tools and insights<p>
+                <a href="#">Try Premium for free</a>
+            </div>
+            <div class="my-item">
+                <p>My items<p> 
+            </div>
+           </div>
+           <div class="left-main-2">
+            <div class="page">
+                <img  class="mildstrings" src="photos/mildstrings.jpeg">
+                <h5>Mildstrings</h5>
+                <div class="page-notification">
+                    <p>Page Notification</p>
+                    <p style="color: blue;">1</p>
+                </div>
+                <div class="page-notification">
+                    <p>Page Visitors</p>
+                    <p style="color: blue;">2</p>
+                </div>
+            </div>
+            <p>See Visitor Analytics<p>
+           </div>
+           <div class="left-main-3">
+           <div class="event-flex">
+            <img class="events" src="icons/calendar-1-svgrepo-com.svg">
+            <p class="events-p" >React Js and React Native</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/calendar-1-svgrepo-com.svg">
+            <p class="events-p" >Javascript Developer Group</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/calendar-1-svgrepo-com.svg">
+            <p class="events-p" >Fullstack Developer Community</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/calendar-1-svgrepo-com.svg">
+            <p class="events-p" >Javascript</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/calendar-1-svgrepo-com.svg">
+            <p class="events-p" >Angular Developer</p>
+           </div>
+           <h6>Groups</h6>
+           <div class="event-flex">
+            <img class="events" src="icons/multiple-users-silhouette-svgrepo-com.svg">
+            <p class="events-p" >AI and ML</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/multiple-users-silhouette-svgrepo-com.svg">
+            <p class="events-p" >Microservices</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/multiple-users-silhouette-svgrepo-com.svg">
+            <p class="events-p" >Project Manager Commun..</p>
+           </div>
+           <p class="same">Show More <i class="fa fa-angle-down" ></i></p>
+           <h6>Events</h6>
+           <div class="event-flex">
+            <img class="events" src="icons/calendar-1-svgrepo-com.svg">
+            <p class="events-p" >Leetcode 99 days Challenge</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/calendar-1-svgrepo-com.svg">
+            <p class="events-p" >Hackathons December</p>
+           </div>
+           <p class="same">See all</p>
+           <h6>Followed Hashtags</h6>
+           <div class="event-flex">
+            <img class="events" src="icons/hashtag-svgrepo-com.svg">
+            <p class="events-p" >Startup</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/hashtag-svgrepo-com.svg">
+            <p class="events-p" >Funding</p>
+           </div>
+           <div class="event-flex">
+            <img class="events" src="icons/hashtag-svgrepo-com.svg">
+            <p class="events-p" >Healthcare</p>
+           </div>
+           <p class="same">Show More <i class="fa fa-angle-down" ></i></p>
+    
+           <div class="discover">
+            Discover More
+           </div>
+           </div>
+        </div>
+        <div class="middle-main">
+            <div class="middle-main-1">
+                <div class="post-1">
+                    <img class="middle-pic" src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80">
+                    <input class="post" type="text" placeholder="Start a post">
+                </div>
+                <div class="linked-input">
+                    <div class="input">
+                        <img class="upload" src="icons/photo-svgrepo-com.svg">
+                        <p>Photo</p>
+                    </div>
+                    <div class="input">
+                        <img class="upload" src="icons/video-movie-play-svgrepo-com.svg">
+                        <p>Video</p>
+                    </div>
+                    <div class="input">
+                        <img class="upload" src="icons/portfolio-svgrepo-com.svg">
+                        <p>Photo</p>
+                    </div>
+                    <div class="input">
+                        <img class="upload" src="icons/right-alignment-text-svgrepo-com.svg">
+                        <p>Photo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-main-2">
+                <div class="post-about">
+                    <div>
+                        <img class="middle-pic" src="photos/amazon_web_services_logo.jpg"> 
+                     </div>
+                     <div>
+                         <a style="color: black ; text-decoration: none;" href="https://aws.amazon.com/"><p class="name">Amazon Web Services (AWS) <p></p></a>
+                         <p class="name-about">9,712,567 followers</p>
+                         <p class="name-about">Promoted</p>
+                         <p class="name-about">6h &#183; <i class="fa fa-globe" aria-hidden="true"></i></p>
+                     </div>
+                </div>
+                <div>
+                    <p>Ready to explore the cloud but don't know where to start? Get an AWS learning recommendation instantly just by selecting your experience level, role, and objectives.</p>
+                </div>
+                <img class="post-image" src="photos/post-image.jpg">
+            </div>
+            <div class="middle-main-2">
+                <div class="post-about">
+                    <div>
+                        <img class="middle-pic" src="photos/apple_logo.jpg"> 
+                     </div>
+                     <div>
+                         <a style="text-decoration: none;" href="https://www.apple.com/"><p class="name" style="color: black;">Apple<p></p></a>
+                         <p class="name-about">Promoted</p>
+                         <p class="name-about">6h &#183; <i class="fa fa-globe" aria-hidden="true"></i></p>
+                     </div>
+                </div>
+                <div>
+                    <p><p>📣 Calling all students! Showcase your creativity and coding skills. Build an app playground and participate in Swift Student Challenge.</p></p>
+                </div>
+                <img class="post-image" src="photos/apple-post.jpg">
+            </div>
+            <div class="middle-main-2">
+                <div class="post-about">
+                    <div>
+                        <img class="middle-pic" src="photos/masai-logo.jpg"> 
+                     </div>
+                     <div>
+                         <a style="text-decoration: none;" href="https://www.masaischool.com/"><p class="name" style="color: black">Masai</p></a>
+                         <p class="name-about">Education</p>
+                         <p class="name-about">129,666 followers</p>
+                         <p class="name-about">6h &#183; <i class="fa fa-globe" aria-hidden="true"></i></p>
+                     </div>
+                </div>
+                <div>
+                    <p>Let's circle back on this EOD 😌
+                        .
+                        .
+                        hashtag#CorporateMemes hashtag#HolidaySeason hashtag#December</p>
+                </div>
+                <img class="post-image" src="photos/masai-post.jpg">
+            </div>
+            <div class="middle-main-2">
+                <div class="post-about">
+                    <div>
+                        <img class="middle-pic" src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80"> 
+                     </div>
+                     <div>
+                         <p class="name">Sameer Ahmed<p>
+                         <p class="name-about">Daily Learning</p>
+                         <p class="name-about">6h &#183; <i class="fa fa-globe" aria-hidden="true"></i></p>
+                     </div>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Expedita, vel fuga. Ipsam repellat quaerat itaque cum error 
+                         optio sapiente dolores dolore repudiandae praesentium. Atque, 
+                        saepe commodi accusantium voluptates quae magnam!</p>
+                </div>
+                <img class="post-image" src="photos/picture-4.jpeg">
+            </div>
+            <div class="middle-main-2">
+                <div class="post-about">
+                    <div>
+                        <img class="middle-pic" src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80"> 
+                     </div>
+                     <div>
+                         <p class="name">Sameer Ahmed<p>
+                         <p class="name-about">DSA </p>
+                         <p class="name-about">6h &#183; <i class="fa fa-globe" aria-hidden="true"></i></p>
+                     </div>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Expedita, vel fuga. Ipsam repellat quaerat itaque cum error 
+                         optio sapiente dolores dolore repudiandae praesentium. Atque, 
+                        saepe commodi accusantium voluptates quae magnam!</p>
+                </div>
+                <img class="post-image" src="photos/picture-5.jpeg">
+            </div>
+            
+        </div>
+        
+        <div class="right-main">
+            <div class="right-main-1">
+                <div>
+                    <h4 style="padding: 0; margin: 0;">Add to your feed</h4>
+                </div>
+                <div class="arz-card">
+                    <div>
+                        <img class="arz" src="photos/anz.jpeg">
+                       </div> 
+                       <div class="arz-info">
+                        <h5>ANZ OILFIELD SERVICES PVT. LTD.</h5>
+                        <p>Company &#183; Oil & Energy</p>
+                        <button class="follow-button"> <i class="fa fa-plus"></i> Follow </button>
+                       </div>
+                </div>
+                <div class="arz-card">
+                    <div>
+                        <img class="arz" src="photos/ropay.jpeg">
+                       </div> 
+                       <div class="arz-info">
+                        <h5>roPay</h5>
+                        <p>Company &#183; Financial Services</p>
+                        <button class="follow-button"> <i class="fa fa-plus"></i> Follow </button>
+                       </div>
+                </div>
+                <div class="arz-card">
+                    <div>
+                        <img class="arz" src="photos/ARM.jpeg">
+                       </div> 
+                       <div class="arz-info">
+                        <h5>ARM Labs Lagos Techstars Accelerator </h5>
+                        <p>Company &#183; Venture Capital & Private</p>
+                        <button class="follow-button"> <i class="fa fa-plus"></i> Follow </button>
+                       </div>
+                </div>
+               <P style="font-size: 14px; text-align: center; margin-top: 10px; color: grey;" >View all recommendations  <i class="fa fa-arrow-right"></i></P>
+            </div>
+            <div class="position">
+                <div class="right-main-2">
+                    <div class="link-box">
+                        <img class="link" src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80">
+                        <img class="link-2" src="photos/link.jpeg">
+                    </div>
+                    <p style="margin-left: 20px; margin-right: 20px;">See who's viewed your profile in the last 365 days</p>
+                    <button>Try Premium for free !</button>
+                </div>
+                    
+                    <div class="right-main-3">
+                        <div class="footer">
+                            <p>About</p> <p>Accessibility</p> <p>Help Center</p> <p>Privacy & Terms</p> <p>Ad choices</p> <p>Advertising</p>
+                            <p>Business Services</p> <p>Get the linkedin app</p> <p>More</p> <p>About</p>
+                        </div>
+                      
+                    </div>
+            </div>
+        </div>
+    </main>
+    <div id="messagingPanel" onclick="toggleMessagingPanel()" class="messaging-panel">
+            <div class="messaging-header">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQFOt3cwkv6pxw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1729950180841?e=1740009600&v=beta&t=ZLpngoGi4bTK_eKYbMvCLzwRQwKULUtOgJrco8wbE80" alt="Profile Picture">
+                Messaging
+                <div id="messaging-icon">
+                    <span><i class="fa-solid fa-ellipsis"></i></span>
+                    <span><i class="fa-regular fa-pen-to-square"></i></span>
+                    <span class="toggle-icon"><i class="fa-solid fa-caret-up"></i></span>
+                </div>
+            </div>
+            <div class="messaging-search">
+                <input type="text" id="searchInput" placeholder="Search messages" onkeyup="filterMessages()">
+            </div>
+    
+            <div id="messageList" class="message-list">
+
+            </div>
+    </div>
+     
+</body>
+</html>
+<script src="./script.js"></script>
