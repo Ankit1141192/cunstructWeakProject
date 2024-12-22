@@ -69,7 +69,8 @@ Include screenshots as necessary.
 ![alt text](image-3.png)
 
 ## My Profile-Section 
-![alt text](image-4.png)
+
+![Screenshot (319)](https://github.com/user-attachments/assets/8056d484-2822-4887-9882-fc58467fac0e)
 
 
 ## Technology Stack
